@@ -8,7 +8,6 @@
   const cardStyle = card.currentStyle || window.getComputedStyle(card);
   const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
 
-
   const cardCount = carousel.querySelectorAll("[data-target='card']").length;
 
   let offset = 0;
@@ -21,7 +20,7 @@
   leftButton.addEventListener("click", function () {
     console.log(offset);
     if (offset !== 0) {
-      offset += carouselWidth + cardMarginRight;
+      offset += carouselWidth + cardMarginRight * 3;
       carousel.style.transform = `translateX(${offset}px)`;
     }
   });
@@ -29,7 +28,7 @@
   rightButton.addEventListener("click", function () {
     console.log(offset, maxX);
     if (offset > maxX) {
-      offset -= carouselWidth + cardMarginRight;
+      offset -= carouselWidth + cardMarginRight * 3;
       carousel.style.transform = `translateX(${offset}px)`;
     }
   });
