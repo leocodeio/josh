@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTGeats</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/popular.css" />
+  </head>
+
+  <!-- Header -->
+  <header class="header">
+    <!-- Navbar -->
+    <div class="header-logo">
+      <h1>JTGeats</h1>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav-links"></ul>
+    </nav>
+    <div class="header-nav-buttons">
+      <button class="menu-button">
+        <img src="assets/icons/menu.svg" alt="menu" />
+      </button>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <body>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-title">
+          <h1>Authentic Home</h1>
+          <h1>food in India</h1>
+        </span>
+        <span class="hero-subtitle">
+          <p>JTGeats is a courier service in which authentic home</p>
+          <p>cook food is delivered to a customer.</p>
+        </span>
+        <div class="hero-search">
+          <input
+            type="text"
+            placeholder="Search food you love"
+            id="search-input"
+          />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="assets/artifacts/cooking-man.png"
+          alt="cooking illustration"
+        />
+      </div>
+    </section>
+
+    <!-- Popular -->
+    <section class="popular">
+      <button data-action="slideLeft">
+        <img src="assets/icons/arrow.svg" alt="arrow-left" />
+      </button>
+      <div class="wrapper">
+        <ul class="carousel" data-target="carousel">
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+          <li class="card" data-target="card"></li>
+        </ul>
+      </div>
+      <button data-action="slideRight">
+        <img src="assets/icons/arrow.svg" alt="arrow-right" />
+      </button>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Do you have a question</h2>
+        <h2>or want to become a seller?</h2>
+        <p>Fill this form and our manager will contact you next 48 hours.</p>
+
+        <form id="contact-form">
+          <div class="contact-container-input">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your e-mail" required />
+          </div>
+          <textarea placeholder="Your message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="contact-image">
+        <img src="assets/artifacts/cute-boy.png" alt="delivery guy" />
+      </div>
+    </section>
+  </body>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h1>JTGeats</h1>
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-nav-links"></ul>
+      </nav>
+      <div class="footer-nav-buttons">
+        <button class="footer-menu-button">
+          <img src="assets/icons/menu.svg" alt="menu" />
+        </button>
+      </div>
+    </div>
+    <img
+      class="footer-line"
+      src="assets/artifacts/horizontal-line.svg"
+      alt="horizontal-line"
+    />
+  </footer>
+  <script src="scripts/header-nav.js" defer></script>
+  <script src="scripts/footer-nav.js" defer></script>
+  <script src="scripts/contact.js" defer></script>
+  <script src="scripts/hero.js" defer></script>
+  <script src="scripts/popular.js" defer></script>
+</html>

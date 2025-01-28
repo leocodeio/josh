@@ -1,0 +1,52 @@
+
+.popular {
+  padding: 3rem 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  height: 200px;
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+[data-action="slideLeft"],
+[data-action="slideRight"] {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+[data-action="slideRight"] img {
+  transform: rotate(180deg);
+}
+
+.carousel {
+  margin: 0;
+  list-style: none;
+  width: calc(100% - 60px);
+  display: flex;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  background: #000000;
+  border-radius: 8px;
+  min-width:180px;
+  height: 200px;
+  margin-right: 15 px;
+  display: inline-block;
+}
