@@ -71,24 +71,22 @@
 
     <!-- Popular -->
     <section class="popular">
-      <button data-action="slideLeft">
-        <img src="assets/icons/arrow.svg" alt="arrow-left" />
-      </button>
-      <div class="wrapper">
-        <ul class="carousel" data-target="carousel">
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-          <li class="card" data-target="card"></li>
-        </ul>
+      <div class="popular-header">
+        <h2>Popular Items</h2>
       </div>
-      <button data-action="slideRight">
-        <img src="assets/icons/arrow.svg" alt="arrow-right" />
-      </button>
+      <div class="carousel-container">
+        <button data-action="slideLeft">
+          <img src="assets/icons/arrow.svg" alt="arrow-left" />
+        </button>
+        <div class="wrapper">
+          <ul class="carousel" data-target="carousel">
+            <!-- Cards will be populated by JavaScript -->
+          </ul>
+        </div>
+        <button data-action="slideRight">
+          <img src="assets/icons/arrow-right.svg" alt="arrow-right" />
+        </button>
+      </div>
     </section>
 
     <!-- Video -->
