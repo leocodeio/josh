@@ -166,10 +166,81 @@
   }
 
   .popular-header {
+
     margin-left: 2rem;
   }
 
   .popular-header h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .carousel-container {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    gap: 0.2rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  .card {
+    min-width: 180px;
+    margin-right: 20px;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .popular {
+    padding: 1rem;
+  }
+
+  .popular-header {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .carousel-container {
+    grid-template-columns: 0.2fr 5fr 0.2fr;
+    gap: 0.5rem;
+  }
+
+  .card {
+    min-width: 180px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+
+  .card-rating,
+  .card-time {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  [data-action="slideLeft"] img,
+  [data-action="slideRight"] img {
+    width: 2rem;
+  }
+
+  [data-action="slideLeft"]:hover img,
+  [data-action="slideRight"]:hover img {
+    height: 4rem;
+    width: 4rem;
   }
 }
