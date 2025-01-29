@@ -59,6 +59,7 @@
     {
       icon: "shopping",
       href: "#",
+      notification: true,
     },
   ];
 
@@ -68,7 +69,25 @@
     const img = document.createElement("img");
     img.src = `assets/icons/${button.icon}.svg`;
     img.alt = button.icon;
-    a.appendChild(img);
+
+    // Create a wrapper div for positioning
+    const wrapper = document.createElement("div");
+    wrapper.style.position = "relative";
+
+    wrapper.appendChild(img);
+
+    // Add notification dot if specified
+    if (button.notification) {
+      const notificationDot = document.createElement("img");
+      notificationDot.src = "assets/icons/notification-dot.svg";
+      notificationDot.alt = "notification";
+      notificationDot.style.position = "absolute";
+      notificationDot.style.top = "2px";
+      notificationDot.style.right = "-2px";
+      wrapper.appendChild(notificationDot);
+    }
+
+    a.appendChild(wrapper);
     navButtonsDiv.appendChild(a);
   });
 })();
