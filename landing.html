@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/popular.css" />
     <link rel="stylesheet" href="css/video.css" />
     <link rel="stylesheet" href="css/kitchen.css" />
+    <link rel="stylesheet" href="css/cart-modal.css" />
   </head>
 
   <!-- Header -->
@@ -134,6 +135,15 @@
         <img src="assets/artifacts/cute-boy.png" alt="delivery guy" />
       </div>
     </section>
+
+    <div class="modal-overlay" id="cartModal">
+      <div class="cart-modal">
+        <img src="assets/icons/empty-cart.svg" alt="Empty Cart" />
+        <h2>Cart is Empty</h2>
+        <p>Add some items to your cart to proceed</p>
+        <button class="back-to-menu">Back to Menu</button>
+      </div>
+    </div>
   </body>
 
   <!-- Footer -->
@@ -164,4 +174,5 @@
   <script src="scripts/popular.js" defer></script>
   <script src="scripts/video.js" defer></script>
   <script src="scripts/kitchen.js" defer></script>
+  <script src="scripts/cart-modal.js" defer></script>
 </html>
