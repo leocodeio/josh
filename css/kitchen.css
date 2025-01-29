@@ -1,22 +1,13 @@
 .kitchen {
-  padding: 3rem 6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 6rem;
   background-color: var(--primary-color);
 }
 
 .kitchen-header {
-  text-align: center;
+  margin-left: 4.5rem;
   margin-bottom: 3rem;
-}
-
-.kitchen-header h2 {
-  font-size: 2.5rem;
-  color: var(--bg-color);
-  margin-bottom: 1rem;
-}
-
-.kitchen-header p {
-  font-size: 1.2rem;
-  color: #666;
 }
 
 .kitchen-cards {
@@ -134,16 +125,23 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .kitchen-header {
+    margin-left: 7rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .kitchen {
     padding: 2rem;
+  }
+
+  .kitchen-header {
+    margin-left: 5rem;
   }
 
   .kitchen-header h2 {
     font-size: 1.8rem;
   }
 
-  .kitchen-header p {
-    font-size: 1rem;
-  }
 }
