@@ -49,5 +49,24 @@
       pauseButton.classList.remove("visible");
       playButton.classList.add("visible");
     });
+
+    // Add video container click handler
+    videoContainer.addEventListener("click", () => {
+      if (video.paused) {
+        video
+          .play()
+          .then(() => {
+            playButton.classList.remove("visible");
+            pauseButton.classList.add("visible");
+          })
+          .catch((error) => {
+            console.error("Error playing video:", error);
+          });
+      } else {
+        video.pause();
+        pauseButton.classList.remove("visible");
+        playButton.classList.add("visible");
+      }
+    });
   }
 })();

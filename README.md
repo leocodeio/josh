@@ -1,14 +1,11 @@
-# JTGeats - Food Delivery Frontend
+## TASKS COMPLETED
 
-JTGeats is a modern, responsive food delivery website frontend built with HTML, CSS, and JavaScript. The project showcases a clean, user-friendly interface for ordering authentic home-cooked food.
+- [x] Popular items carousel
+- [x] Hover states match as needed
+- [x] OnClick on cart icon - modal with requirements is implemented
+- [x] OnClick on Request a dish - modal with requirements is implemented
+- [x] When modal is open, window is not scrollable
+- [x] Footer Nav Icons
+- [x] Header Nav Notification Dots
+- [x] Footer Nav Notification Dots
 
-## 🌟 Features
-
-- **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
-- **Interactive Components**:
-  - Dynamic carousel for popular items
-  - Video player with custom controls
-  - Contact form with validation
-  - Modal windows for cart and dish requests
-  - Interactive search functionality
-  - Mobile-friendly navigation menu
