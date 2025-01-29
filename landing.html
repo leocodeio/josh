@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/video.css" />
     <link rel="stylesheet" href="css/kitchen.css" />
     <link rel="stylesheet" href="css/cart-modal.css" />
+    <link rel="stylesheet" href="css/request-modal.css" />
   </head>
 
   <!-- Header -->
@@ -88,6 +89,7 @@
           <img src="assets/icons/arrow-right.svg" alt="arrow-right" />
         </button>
       </div>
+      <button class="request-button">Request a Dish</button>
     </section>
 
     <!-- Video -->
@@ -136,12 +138,34 @@
       </div>
     </section>
 
+    <!-- Cart Modal -->
     <div class="modal-overlay" id="cartModal">
       <div class="cart-modal">
         <img src="assets/icons/empty-cart.svg" alt="Empty Cart" />
         <h2>Cart is Empty</h2>
         <p>Add some items to your cart to proceed</p>
         <button class="back-to-menu">Back to Menu</button>
+      </div>
+    </div>
+
+    <!-- Request Modal -->
+    <div class="modal-overlay" id="requestModal">
+      <div class="request-modal">
+        <h2>Request a Dish</h2>
+        <form id="request-form">
+          <div class="request-modal-form">
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Enter name of the dish" />
+          </div>
+          <div class="request-modal-form">
+            <label for="image">Upload an image</label>
+            <input type="text" placeholder="Paste image URL here" />
+          </div>
+          <div class="request-modal-buttons">
+            <button type="button" class="cancel-button">Cancel</button>
+            <button type="submit" class="submit-request">Submit Request</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
@@ -175,4 +199,5 @@
   <script src="scripts/video.js" defer></script>
   <script src="scripts/kitchen.js" defer></script>
   <script src="scripts/cart-modal.js" defer></script>
+  <script src="scripts/request-modal.js" defer></script>
 </html>
