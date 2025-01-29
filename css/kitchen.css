@@ -1,0 +1,149 @@
+.kitchen {
+  padding: 3rem 6rem;
+  background-color: var(--primary-color);
+}
+
+.kitchen-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.kitchen-header h2 {
+  font-size: 2.5rem;
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+}
+
+.kitchen-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.kitchen-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.kitchen-card {
+  width: 275px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.kitchen-card .discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--decorative-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+}
+
+.kitchen-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  float: left;
+}
+
+.card-content .price {
+  float: right;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-content .details {
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.rating,
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.time {
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  border-right: 5px solid #aaaaaa;
+  border-left: 5px solid #aaaaaa;
+}
+
+.rating i {
+  color: var(--decorative-color);
+}
+
+.add-to-cart {
+  margin-left: auto;
+  background-color: var(--decorative-color);
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25%;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.star-icon {
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-value {
+  font-size: 0.8rem;
+}
+
+.plus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .kitchen {
+    padding: 2rem;
+  }
+
+  .kitchen-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .kitchen-header p {
+    font-size: 1rem;
+  }
+}
